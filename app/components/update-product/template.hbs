@@ -1,0 +1,28 @@
+{{#if showUpdateForm}}
+  <form>
+    <label for="title">Title:</label>
+    {{input value=title id="title"}}
+
+    <label for="artist">Artist:</label>
+    {{input value=artist id="artist"}}
+
+    <label for="year">Year:</label>
+    {{input value=year id="year"}}
+
+    <label for="country">Country:</label>
+    {{input value=country id="country"}}
+
+    <label for="price">Price:</label>
+    {{input value=price id="price"}}
+
+    <label for="image">Image URL:</label>
+    {{input value=image id="image"}}
+
+    <label for="description">Description:</label>
+    {{input value=description id="description"}}
+
+    <button {{action 'updateProduct' product}}>Save</button>
+  </form>
+{{else}}
+  <button {{action 'showUpdateForm'}}>Update</button>
+{{/if}}

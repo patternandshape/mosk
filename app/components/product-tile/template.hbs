@@ -3,7 +3,7 @@
       {{#link-to 'product' product.id}}{{product.title}} - ${{product.price}}{{/link-to}}
     </p>
 
-  <img class="thumbnail" src={{product.image}}>
-  <p><b>{{product.artist}}, {{product.year}}</b><br>{{product.country}}</p>
-  <button {{action 'addToCart' product}}>Add to Cart</button>
+    {{#link-to 'product' product.id}}<img class="thumbnail" src={{product.image}}>{{/link-to}}
+    <p><b>{{product.artist}}, {{product.year}}</b><br>{{product.country}}</p>
+      <button {{action 'addToCart' product}}>Add to Cart</button>
 </div>

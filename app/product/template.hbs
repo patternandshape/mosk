@@ -10,6 +10,7 @@
   <div class="buttons">
     <button {{action 'addToCart' model}}>Add to Cart</button>
     <button class="remove-button" {{action 'destroyProduct' model}}>Remove</button>
+    {{update-product product=model updateProduct="updateProduct"}}
   </div>
 
 </div>

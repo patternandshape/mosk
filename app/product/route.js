@@ -8,6 +8,16 @@ export default Ember.Route.extend({
     destroyProduct(product) {
       product.destroyRecord();
       this.transitionTo('index');
+    },
+    updateProduct(product, params) {
+      console.log(product);
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          product.set(key,params[key]);
+        }
+      });
+      product.save();
+      this.transitionTo('product', product);
     }
   }
 });
