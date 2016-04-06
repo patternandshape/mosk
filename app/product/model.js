@@ -5,5 +5,6 @@ export default DS.Model.extend({
   artist: DS.attr(),
   year: DS.attr(),
   country: DS.attr(),
-  price: DS.attr()
+  price: DS.attr(),
+  image: DS.attr()
 });
