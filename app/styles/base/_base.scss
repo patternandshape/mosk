@@ -25,13 +25,9 @@ html {
 
 a {
   text-decoration: none;
+  color: red;
   &:hover {
     text-decoration: none;
-  }
-  h1 {
-    color: red;
-    &:hover {
-      color: blue;
-    }
+    color: blue;
   }
 }

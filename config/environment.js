@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'mosk',
     environment: environment,
+    firebase: 'https://mosk.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
