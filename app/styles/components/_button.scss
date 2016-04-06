@@ -17,7 +17,6 @@ button {
   letter-spacing: .1em;
   font-size: .8em;
   outline: none;
-  display: inline;
   &:hover {
     background: red;
     border-bottom: 4px solid lighten(red, 20%);
@@ -25,5 +24,13 @@ button {
 }
 
 .remove-button {
-  width: 75px;
+  width: 80px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+  width: 250px;
+  justify-content: space-around;
 }

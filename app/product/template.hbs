@@ -1,11 +1,15 @@
 <div class="product-page">
-    <p class="product-page-name">
-      {{model.title}} - ${{model.price}}
+    <p class="product-page-title">
+      {{model.title}} - ${{model.price}}<br><i>{{model.artist}}, {{model.year}}<br>{{model.country}}</i>
     </p>
 
-  <img class="thumbnail" src={{model.image}}>
+  <img class="lg-image" src={{model.image}}>
   <p>
     {{model.description}}
   </p>
-  <button {{action 'addToCart' product}}>Add to Cart</button> <button class="remove-button" {{action 'destroyProduct' product}}>Remove</button>
+  <div class="buttons">
+    <button {{action 'addToCart' product}}>Add to Cart</button>
+    <button class="remove-button" {{action 'destroyProduct' product}}>Remove</button>
+  </div>
+
 </div>
