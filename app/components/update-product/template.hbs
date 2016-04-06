@@ -21,7 +21,7 @@
     <label for="description">Description:</label>
     {{input value=description id="description"}}
 
-    <button {{action 'updateProduct' product}}>Save</button>
+    <button class="update-button" {{action 'updateProduct' product}}>Save</button>
   </form>
 {{else}}
   <button {{action 'showUpdateForm'}}>Update</button>
