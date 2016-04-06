@@ -1,6 +1,6 @@
 nav {
   float: left;
-  margin-top: 18vh;
+  margin-top: 13vh;
   position: fixed;
   background: red;
   color: white;
@@ -21,6 +21,39 @@ nav {
     }
     &:hover {
       color: blue;
+    }
+  }
+  a {
+    color: white;
+  }
+}
+
+.sell-item {
+  float: left;
+  margin-top: 45vh;
+  position: fixed;
+  background: blue;
+  color: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+  .fa {
+    margin-top: 8px;
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    b {
+      text-transform: uppercase;
+      font-size: .6em;
+      font-family: 'Inconsolata';
+    }
+    &:hover {
+      color: red;
     }
   }
   a {
