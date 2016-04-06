@@ -6,5 +6,6 @@ export default DS.Model.extend({
   year: DS.attr(),
   country: DS.attr(),
   price: DS.attr(),
-  image: DS.attr()
+  image: DS.attr(),
+  description: DS.attr()
 });

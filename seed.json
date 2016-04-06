@@ -1,9 +1,10 @@
 {"products": [{
-  "title": "Falling Water",
+  "title": "Fallingwater",
   "artist": "Frank Lloyd Wright",
   "year": "1980??",
   "country": "Somewhere??",
   "price": "1,000,000,000",
-  "image": "http://www.wright-house.com/frank-lloyd-wright/fallingwater-pictures/large-fallingwater-photos/high-resolution/25SW-falling-water-path2-L.jpg"
+  "image": "http://www.wright-house.com/frank-lloyd-wright/fallingwater-pictures/large-fallingwater-photos/high-resolution/25SW-falling-water-path2-L.jpg",
+  "description": "Fallingwater or Kaufmann Residence is a house designed by architect Frank Lloyd Wright in 1935 in rural southwestern Pennsylvania, 43 miles (69km) southeast of Pittsburgh. The home was built partly over a waterfall on Bear Run in the Mill Run section of Stewart Township, Fayette County, Pennsylvania, in the Laurel Highlands of the Allegheny Mountains. The house was designed as a weekend home for the family of Edgar J. Kaufmann, owner of Kaufmann's department store."
   }]
 }

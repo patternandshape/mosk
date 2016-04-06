@@ -41,3 +41,15 @@ a {
 p {
   display: inline;
 }
+
+.product {
+  width: 33.3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  p {
+    width: 400px;
+    text-align: justify;
+  }
+}
