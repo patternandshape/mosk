@@ -1,8 +1,11 @@
 {{#link-to 'index'}}<h1 id="title">MoSK</h1>{{/link-to}}
 
 <nav>
-  {{#link-to 'store'}}Shop{{/link-to}}
-  {{#link-to 'cart'}} Collection {{/link-to}}
+  {{#link-to 'store'}}<i class="fa fa-picture-o"><br><b>View All</b></i>{{/link-to}}
+
+  {{#link-to 'cart'}}<i class="fa fa-credit-card"><br><b>Cart</b></i>{{/link-to}}
 </nav>
 
+<div class="container">
 {{outlet}}
+</div>
