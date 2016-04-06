@@ -16,6 +16,7 @@ export default Ember.Component.extend({
         image: this.get('image'),
         description: this.get('description')
       };
+      console.log(params);
       this.set('showProductForm', false);
       this.set('title', "");
       this.set('artist', "");

@@ -58,3 +58,9 @@ p {
   display: flex;
   justify-content: space-around;
 }
+
+.product-title {
+  display: flex;
+  align-items: baseline;
+  width: 400px;
+}
