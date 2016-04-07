@@ -1,5 +1,5 @@
 {{#if 'showProductForm'}}
-  <form>
+  <form class ="form-style">
     <label for="title">Title:</label>
     {{input value=title id="title"}}
 
@@ -19,7 +19,7 @@
     {{input value=image id="image"}}
 
     <label for="description">Description:</label>
-    {{input value=description id="description"}}
+    {{textarea value=description id="description"}}
 
     <button {{action 'saveProduct' product}}>Save</button>
   </form>
