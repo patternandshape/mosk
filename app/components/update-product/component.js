@@ -11,9 +11,9 @@ export default Ember.Component.extend({
       var params = {
         title: this.get('title'),
         artist: this.get('artist'),
-        year: this.get.parseInt('year'),
+        year: parseInt(this.get('year')),
         country: this.get('country'),
-        price: this.get.parseInt('price'),
+        price: parseInt(this.get('price')),
         image: this.get('image'),
         description: this.get('description')
       };

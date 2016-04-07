@@ -7,5 +7,11 @@ export default DS.Model.extend({
   country: DS.attr(),
   price: DS.attr(),
   image: DS.attr(),
-  description: DS.attr()
+  description: DS.attr(),
+
+  shoppingCart: Ember.inject.service(),
+  inCart: Ember.computed('shoppingCart.products.[]', function(){
+    console.log(shoppingCart);
+    return this.get('shoppingCart').includes(this);
+  })
 });

@@ -10,9 +10,9 @@ export default Ember.Component.extend({
       var params = {
         title: this.get('title'),
         artist: this.get('artist'),
-        year: this.get.parseInt('year'),
+        year: parseInt(this.get('year')),
         country: this.get('country'),
-        price: this.get.parseInt('price'),
+        price: parseInt(this.get('price')),
         image: this.get('image'),
         description: this.get('description')
       };
@@ -20,9 +20,7 @@ export default Ember.Component.extend({
       this.set('showProductForm', false);
       this.set('title', "");
       this.set('artist', "");
-      this.set('year', "");
       this.set('country', "");
-      this.set('price', "");
       this.set('image', "");
       this.set('description', "");
       this.sendAction('saveProduct', params);

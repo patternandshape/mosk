@@ -8,7 +8,11 @@
     {{model.description}}
   </p>
   <div class="buttons">
-    <button {{action 'addToCart' model}}>Add to Cart</button>
+    {{log model.inCart}}
+    {{#if model.inCart}}
+    {{else}}
+      <button {{action 'addToCart' model}}>Add to Cart</button>
+    {{/if}}
     <button class="remove-button" {{action 'destroyProduct' model}}>Remove</button>
     {{update-product product=model updateProduct="updateProduct"}}
   </div>
