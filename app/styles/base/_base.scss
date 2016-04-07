@@ -19,6 +19,12 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-image: url('/img/terrazzo-fade.jpg');
+  height: 100%;
+  width: 100%;
+}
+
 /**
  * Basic styles for links
  */
@@ -104,4 +110,8 @@ p {
     font-weight: normal;
     font-style: normal;
   }
+}
+
+.total-zone {
+  text-align: right;
 }

@@ -1,6 +1,7 @@
-{{#each shoppingCart.products as |product|}}
-  <h5>{{product.title}}, {{product.artist}} - ${{product.price}}</h5>
+<div class="total-zone">
+  {{#each shoppingCart.products as |product|}}
+    <h5>{{product.title}}, {{product.artist}} - ${{comma-adder product.price}}</h5>
 {{/each}}
-
-<p>Total:</p>
-<p>${{shoppingCart.cartTotal}}</p>
+  <p>Total:</p>
+  <p>${{comma-adder shoppingCart.cartTotal}}</p>
+</div>
