@@ -158,3 +158,29 @@ textarea {
 label {
   margin-bottom: 15px;
 }
+
+.divider {
+  height: 1px;
+  background: blue;
+  width: 200px;
+  margin: auto;
+}
+
+.total-zone {
+  background: white;
+  border: 1px solid #e0e0e0;
+  min-height: 500px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  margin-bottom: 100px;
+  h3 {
+    font-family: 'Inconsolata';
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p {
+    line-height: 4em;
+  }
+}

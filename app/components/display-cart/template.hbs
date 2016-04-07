@@ -1,7 +1,8 @@
 <div class="total-zone">
+  <h3>Your cart:</h3>
   {{#each shoppingCart.products as |product|}}
-    <h5>{{product.title}}, {{product.artist}} - ${{comma-adder product.price}}</h5>
+    <p>{{product.title}}, {{product.artist}} - ${{comma-adder product.price}}</p>
+    <div class="divider"></div>
 {{/each}}
-  <p>Total:</p>
-  <p>${{comma-adder shoppingCart.cartTotal}}</p>
+  <p class="total">Total: <b>${{comma-adder shoppingCart.cartTotal}}</b></p>
 </div>
