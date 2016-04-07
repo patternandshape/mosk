@@ -11,13 +11,12 @@ export default Ember.Component.extend({
       var params = {
         title: this.get('title'),
         artist: this.get('artist'),
-        year: this.get('year'),
+        year: this.get.parseInt('year'),
         country: this.get('country'),
-        price: this.get('price'),
+        price: this.get.parseInt('price'),
         image: this.get('image'),
         description: this.get('description')
       };
-      console.log(product);
       this.set('showUpdateForm', false);
       this.sendAction('updateProduct', product, params);
     }
