@@ -1,6 +1,6 @@
 <div class="product-page">
     <p class="product-page-title">
-      {{model.title}} - ${{model.price}}<br><i>{{model.artist}}, {{model.year}}<br>{{model.country}}</i>
+      {{model.title}} - ${{comma-adder model.price}}<br><i>{{model.artist}}, {{model.year}}<br>{{model.country}}</i>
     </p>
 
   <img class="lg-image" src={{model.image}}>
@@ -8,12 +8,8 @@
     {{model.description}}
   </p>
   <div class="buttons">
-    {{log model.inCart}}
-    {{#if model.inCart}}
-    {{else}}
-      <button {{action 'addToCart' model}}>Add to Cart</button>
-    {{/if}}
-    <button class="remove-button" {{action 'destroyProduct' model}}>Remove</button>
+      <button class="add-button product-button" {{action 'addToCart' model}}>Add to Cart</button>
+    <button class="remove-button product-button" {{action 'destroyProduct' model}}>Remove</button>
     {{update-product product=model updateProduct="updateProduct"}}
   </div>
 

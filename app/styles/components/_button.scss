@@ -5,7 +5,6 @@
 button {
   background: blue;
   border: none;
-  margin-left: 5px;
   margin-top: 15px;
   border-bottom: 4px solid lighten(blue, 20%);
   color: white;
@@ -29,9 +28,26 @@ button {
 
 
 .buttons {
-  margin-bottom: 100px;
   display: flex;
   align-items: baseline;
-  width: 350px;
-  justify-content: space-around;
+  width: 800px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.add-button {
+  background: red;
+  border-bottom: 4px solid lighten(red, 20%);
+  &:hover {
+    background: blue;
+    border-bottom: 4px solid lighten(blue, 20%);
+  }
+}
+
+.product-button {
+  margin-right: 20px;
+}
+
+.update-button {
+  margin-bottom: 100px;
 }

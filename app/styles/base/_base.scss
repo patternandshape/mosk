@@ -23,7 +23,7 @@ body {
   background-image: url('/img/terrazzo-fade.jpg');
   height: 100vh;
   width: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
 }
 
@@ -119,14 +119,15 @@ p {
 }
 
 .form-style {
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 580px;
   font-family: 'Inconsolata';
   text-transform: uppercase;
   letter-spacing: 0.1em;
   input {
-    width: 500px;
+    width: 580px;
     border: 1px solid #e0e0e0;
     margin-bottom: 20px;
     height: 2em;
@@ -148,7 +149,7 @@ p {
 }
 
 textarea {
-  width: 500px;
+  width: 580px;
   font-family: 'Inconsolata';
   border: 1px solid #e0e0e0;
   height: 9em;

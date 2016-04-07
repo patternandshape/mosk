@@ -1,5 +1,5 @@
 {{#if showUpdateForm}}
-  <form class ="form-style">
+  <form class ="form-style update-style">
     <label for="title">Title:</label>
     {{input value=title id="title"}}
 
@@ -21,7 +21,7 @@
     <label for="description">Description:</label>
     {{textarea value=description id="description"}}
 
-    <button class="update-button" {{action 'updateProduct' product}}>Save</button>
+    <button class="update-button product-button" {{action 'updateProduct' product}}>Save</button>
   </form>
 {{else}}
   <button {{action 'showUpdateForm'}}>Update</button>
