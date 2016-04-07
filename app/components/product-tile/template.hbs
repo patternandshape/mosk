@@ -1,6 +1,6 @@
 <div class="product">
     <p class="product-name">
-      {{#link-to 'product' product.id}}{{product.title}} - ${{product.price}}{{/link-to}}
+      {{#link-to 'product' product.id}}{{product.title}} - ${{comma-adder product.price}}{{/link-to}}
     </p>
 
     {{#link-to 'product' product.id}}

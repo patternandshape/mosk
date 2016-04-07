@@ -9,9 +9,10 @@ export default DS.Model.extend({
   image: DS.attr(),
   description: DS.attr(),
 
-  shoppingCart: Ember.inject.service(),
-  inCart: Ember.computed('shoppingCart.products.[]', function(){
-    console.log(shoppingCart);
-    return this.get('shoppingCart').includes(this);
-  })
+  // displayPrice: Ember.computed('price'),
+  // shoppingCart: Ember.inject.service(),
+  // inCart: Ember.computed('shoppingCart.products.[]', function(){
+  //   console.log(shoppingCart);
+  //   return this.get('shoppingCart').includes(this);
+  // })
 });
