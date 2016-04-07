@@ -17,7 +17,7 @@ export default Ember.Route.extend({
         }
       });
       product.save();
-      this.transitionTo('product', product);
+      this.transitionTo('index');
     }
   }
 });

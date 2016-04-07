@@ -34,6 +34,8 @@ a {
 
 .thumbnail {
   width: 400px;
+  height: 300px;
+  background-size: cover;
   display: block;
   margin-top: 10px;
 }
@@ -47,11 +49,12 @@ p {
 }
 
 .product {
-  width: 33.3vw;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0px 35px;
   p {
     width: 400px;
     text-align: justify;
@@ -71,9 +74,12 @@ p {
   }
 }
 
-.container {
+.wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  width: 70vw;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 .product-title {
