@@ -8,7 +8,7 @@ April 7, 2016
 
 ### Description
 
-MoSK is an e-commerce site where the user can view individual pages for the various pieces, as well as add pieces to their cart and see the total cost. They can also leave feedback and ratings on items and for the store itself. The administrator of the site will be able to add new art pieces, as well as update and delete entries where necessary.
+MoSK is an e-commerce site where the user can view individual pages for the various pieces, as well as add pieces to their cart and see the total cost. The administrator of the site will be able to add new art pieces, as well as update and delete entries where necessary.
 
 ## Installation
 
@@ -18,6 +18,8 @@ MoSK is an e-commerce site where the user can view individual pages for the vari
 * `bower install`
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
+
+MoSK can also be viewed at http://patternandshape.github.io/mosk
 
 ### Technologies Used
 
