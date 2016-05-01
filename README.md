@@ -28,9 +28,9 @@ MoSK can also be viewed at http://patternandshape.github.io/mosk
 * NPM
 * Node
 * Bower
+* Git
 * HTML
 * SCSS
-* Git
 * Google Fonts
 
 ##### License
