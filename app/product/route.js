@@ -7,6 +7,9 @@ export default Ember.Route.extend({
   shoppingCart: Ember.inject.service(),
   
   actions: {
+    addToCart(product) {
+      this.get('shoppingCart').add(product);
+    },
     destroyProduct(product) {
       product.destroyRecord();
       this.transitionTo('index');
